@@ -67,12 +67,11 @@ var name = document.getElementById("name");
     for (var i = 0; i < l.length; i++) {
     console.log("Printing with:"+l[i]);
       name.value = l[i];
-      popup.close();
+      popup.hide();
       window.print();
       popup.show();
     //Do something
 }
-
 
   }
  btn.ondblclick = crazy_print();
